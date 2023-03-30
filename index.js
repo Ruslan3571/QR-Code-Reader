@@ -31,7 +31,7 @@ async function fetchRequest(formData, file) {
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
   await delay(1000);
   try {
-    const response = await fetch("http://api.qrserver.com/v1/read-qr-code/", {
+    const response = await fetch("https://api.qrserver.com/v1/read-qr-code/", {
       method: "POST",
       body: formData,
     });
